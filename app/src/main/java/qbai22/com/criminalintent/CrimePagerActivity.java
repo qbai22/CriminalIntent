@@ -18,7 +18,8 @@ import android.view.MenuItem;
 import java.util.List;
 import java.util.UUID;
 
-public class CrimePagerActivity extends AppCompatActivity {
+public class CrimePagerActivity extends AppCompatActivity
+        implements CrimeFragment.Callbacks {
 
     public static final String STATUS_CONTS = "EF";
     private static final String EXTRA_CRIME_ID = "qbai22.com.criminalintent.crime_id";
@@ -78,4 +79,13 @@ public class CrimePagerActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onCrimeDeleted() {
+
+    }
+
+    @Override
+    public void onCrimeUpdated(Crime crime) {
+
+    }
 }

@@ -25,7 +25,6 @@ public class CrimeLab {
     private CrimeLab(Context context) {
         mContext = context.getApplicationContext();
         mDatabase = new CrimeBaseHelper(mContext).getWritableDatabase();
-
     }
 
     public static CrimeLab getCrimeLab(Context context) {
